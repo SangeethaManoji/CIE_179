@@ -1,4 +1,4 @@
-public class Calculator{
+public class Calculator extends ExtendedCalculator {
     public float addition(float operand1 ,float operand2){
         return (operand1 + operand2 );
     }
@@ -24,9 +24,9 @@ public class Calculator{
         System.out.print("\nMultiplication of two numbers" + mul_result);
         float div_result=calc.division( operand1 ,operand2);
         System.out.print("\nDivision of two numbers" + div_result);
-        // float sq_result=calc.square( operand1 );
-        // System.out.print("Square of a numbers" + sq_result);
-        // float cb_result=calc.cube( operand1);
-        // System.out.print("Cube of a numbers" + cb_result);
+        float sq_result=calc.square( operand1 );
+        System.out.print("Square of a numbers" + sq_result);
+        float cb_result=calc.cube( operand1);
+        System.out.print("Cube of a numbers" + cb_result);
     }
 }
